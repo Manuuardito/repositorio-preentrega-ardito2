@@ -30,7 +30,7 @@
                 <div class="col-lg-7 col-7">
                     <ul class="nav-inicio-mio nav-underline justify-content-end">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../inicio.html">INICIO</a>
+                            <a class="nav-link" aria-current="page" href="../inicio.html">INICIO</a>
                         </li>
                         <li class="nav-item">
                              <a class="nav-link" href="../pages/basquet.html">BASQUET</a>
@@ -42,60 +42,129 @@
                             <a class="nav-link" href="../pages/aranceles.html">ARANCELES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">HACETE SOCIO</a>
+                            <a class="nav-link active" href="#">HACETE SOCIO</a>
                          </li>
                     </ul>
                 </div>
             </div>
         </div>
+        <nav class="navbar bg-body-tertiary logo">
+            <div>
+              <a class="navbar-brand" href="#">
+                <img src="../MEDIA/IMG/escudoclaridad.png" alt="logoclaridad" width="90" height="90">
+              </a>
+            </div>
+          </nav>
     </header>
     <section class="FORMULARIO">
         <div>
         <H1 id="titulo-formulario">!Hacete Socio y Ayuda al Verde desde tu lugar!</H1>
-        <form action="" method="get" enctype="application/x-www-form-urlencoded">
-         <div><label for="Nombre">Nombre</label> 
-            <input type="text" name="Nombre" id="Nombre"></div> 
-    
-
-        <div><label for="Apellido">Apellido</label>
-            <input type="text" name="Apellido" id="Apellido"></div>
-    
-        <div><label for="Edad">Edad</label>
-            <input type="number" name="quantity" id="quantity"></div> 
-
-        <div><label for="Email">Email</label> 
-            <input type="Email" name="Email" id="Email"></div>
-
-         <div><label for="Password">Contraseña</label> 
-            <input type="Password" name="Password" id="Password"></div>
-
-        <div><label for="Numero de Telefono">Numero de Telefono</label> 
-            <input type="tel" id="phone" name="phone" placeholder="12-3456-7890"></div> 
-
-
-        <div><label for="Direccion">Direccion</label> 
-            <input type="text" name="text" id="text"></div>
-
-
-        <div><label for="Localidad">Localidad</label> 
-            <input type="text" name="text" id="text"></div> 
-
-
-        <div><label for="Pais de Nacimiento">Pais de Nacimiento</label> 
-            <input type="text" name="text" id="text"></div> 
-        
-
-
-         <div><button>REGISTRARSE</button>
-        </div> 
-        </form>
-        </div>  
+        <HR></HR>
+        <form class="row g-3">
+            <div class="col-md-4">
+                <label for="validationDefault01" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="validationDefault01" value="Todos los Nombre" required>
+              </div>
+              <div class="col-md-4">
+                <label for="validationDefault02" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="validationDefault02" value="Todos los Apellidos" required>
+            </div>
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Direccion 1</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="Tu Direccion">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Direccion 2 (opcional)</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Departamento, Trabajo, o Casa">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">Localidad</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">Provincia</label>
+              <select id="inputState" class="form-select">
+                <option selected>Buenos Aires Provincia</option>
+                <option>C.A.B.A</option>
+                <option>Cordoba</option>
+                <option>Entre Rios</option>
+                <option>Santa Fé</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">Cod.Postal</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  !Recordame!
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn boton-form">Registrarme</button>
+            </div>
+          </form>
+             <HR></HR>
     </section>
+    <main class="FORMULARIO"><h1>!Encontranos!</h1></main>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="card col-lg-6 container-map-mio" style="width: 39rem; height: 39rem;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.457432434408!2d-58.54005668476929!3d-34.643148980449226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9ba596b4945%3A0xdec7d0d6ed4d9039!2sClub%20Social%20Claridad%20de%20Fomento%20y%20Cultura!5e0!3m2!1ses!2sar!4v1686001624929!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+                <div class="card-body">
+                  <h5 class="card-title">!Veni a Visitarnos!</h5>
+                  <a href="https://goo.gl/maps/P4pYZ3RoHzhUXHHw9" class="btn boton-form">!Vamos!</a>
+                </div>
+            </div>
+            <div class="col-lg-6 container-map-mio">
+                <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../MEDIA/IMG/claridadcancha.jpg" class="d-block w-100" alt="claridad">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../MEDIA/IMG/natacion.png" class="d-block w-100" alt="pileta">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../MEDIA/IMG/gymclaridad.jpg" class="d-block w-100" alt="gym">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../MEDIA/IMG/futbol.png" class="d-block w-100" alt="futbol">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+
+        </div>
+    </div> 
+    <hr class="FORMULARIO">  
+    
+   
+
     <footer class="footer-inicio">
         <h3>+54 9 1150348785</h3>
-        <a href="https://www.instagram.com/clubclaridad/">instagram</a>
-        <a href="#">Cerrar Sesión</a>
-        <a href="#">Ayuda</a>
+        <a class="footer-inicio" href="https://www.instagram.com/clubclaridad/"><img src="../MEDIA/IMG/instagram-logo.svg" alt="instagram"></a>
+        <a class="footer-inicio" href="#"><img src="../MEDIA/IMG/cerrarsesion.svg" alt="log out"></a>
+        <a class="footer-inicio" href="#"><img src="../MEDIA/IMG/ayuda.svg" alt="HELP"></a>
     </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
