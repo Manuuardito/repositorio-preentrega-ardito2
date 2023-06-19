@@ -7,75 +7,193 @@
     <link rel="shortcut icon" href="../media/favicon/FAVICON.jfif" type="image/x-icon">
     <title>Claridad</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-5 col-5">
-                    <ul>
-                        <li class="tipolmio3 ldeco">
-                            <img src="../media/img/telephone.svg" alt="Telefono">
-                            <strong>4653-4286</strong>
-                        </li>
-                        <li class="tipolmio3 ldeco">
-                            <img src="../media/img/envelope.svg" alt="mail">
-                                <a class="tipolmio3 ldeco" href="mailto:info@clubsocialclaridad@gmail.com">
-                                    <strong>infoclubclaridad@gmail.com</strong>
-                                </a>  
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-7 col-7">
-                    <ul class="nav-inicio-mio nav-underline justify-content-end">
+    <div class="container-fluid" id="contacto-navbar">
+        <div class="row">
+            <div class="col-lg-5 col-5">
+                <ul>
+                    <li class="tipolmio3 ldeco">
+                        <img src="../media/img/telephone.svg" alt="Telefono">
+                        <strong>4653-4286</strong>
+                    </li>
+                    <li class="tipolmio3 ldeco">
+                        <img src="../media/img/envelope.svg" alt="mail">
+                            <a class="tipolmio3 ldeco" href="E-mail">
+                                <strong>E-mail</strong>
+                            </a>  
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-7 col-7">
+                <ul class="nav-inicio-mio nav-underline justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="../pages/basquet.html">BASQUET</a>
+                    </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
-                        </li>
-                        <li class="nav-item">
-                             <a class="nav-link" href="../pages/basquet.html">BASQUET</a>
-                        </li>
-                            <li class="nav-item">
-                             <a class="nav-link active" href="#">DISCIPLINAS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/aranceles.html">ARANCELES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/hacete-socio.html">HACETE SOCIO</a>
-                         </li>
-                    </ul>
-                </div>
+                         <a class="nav-link active" href="#">DISCIPLINAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/aranceles.html">ARANCELES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/hacete-socio.html">HACETE SOCIO</a>
+                     </li>
+                </ul>
             </div>
         </div>
-        <nav class="navbar bg-body-tertiary logo">
-            <div>
-              <a class="navbar-brand" href="#">
-                <img src="../media/img/escudoclaridad.png" alt="logoclaridad" width="90" height="90">
-              </a>
+    </div>
+    <nav class="navbar bg-body-tertiary logo">
+        <div class="escudo-inicio">
+          <a class="navbar-brand" href="#">
+            <img src="../media/img/escudoclaridad.png" alt="logoclaridad" width="90" height="90">
+          </a>
+        </div>
+      </nav>
+      <div class="navbar-mobile">
+        <nav class="navbar navbar-dark bg-dark-mio fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"> Claridad</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasDarkNavbar"
+              aria-controls="offcanvasDarkNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end text-bg-dark"
+              tabindex="-1"
+              id="offcanvasDarkNavbar"
+              aria-labelledby="offcanvasDarkNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                  Claridad
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close btn-close-white"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html"
+                      >Inicio</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/hacete-socio.html"
+                      >Hacete Socio</a
+                    >
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Más
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li>
+                        <a class="dropdown-item" href="../pages/basquet.html"
+                          >Basquet</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Disciplinas</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="../pages/aranceles.html"
+                          >Aranceles</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </nav>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <div id="fondo-disciplinas" class="disciplinas-contenido">
-        <h1 >¡ANOTATE EN NUESTRAS ACTIVIDADES!</h1>
-        <h2>Basquet</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis assumenda asperiores culpa sequi ex a adipisci rerum blanditiis, quisquam deserunt ab? Autem est cum dolores quas ipsum molestias facere esse.</p>
-        <h2>Futbol</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae maxime, beatae mollitia aliquid ipsum ab saepe dolorum autem corporis, dolores quam laudantium quidem blanditiis repellat doloribus ipsam id? Cupiditate, quam?</p>
-        <h2>Patin</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus deleniti ex qui reiciendis nesciunt sunt distinctio dolore quas deserunt quasi, perferendis nulla impedit in eum quae at vel. Distinctio, pariatur!</p>
-        <h2>Tela</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem accusantium hic recusandae ipsam, placeat nisi ut nihil, delectus consequatur maiores ipsum a adipisci, quia molestias nobis aspernatur iusto! Maiores, asperiores?</p>
-        <h2>Taewkondo</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptatem neque ut possimus rem, expedita modi illo hic veritatis, sint eaque ducimus sit odio optio facere veniam aperiam dolorem. Unde?</p>
+        <h1 class="titulo-disciplinas">¡ANOTATE EN NUESTRAS ACTIVIDADES!</h1>
+        <div class="row row-cols-1 row-cols-md-2 g-4 cardsdisciplinas">
+          <div class="col">
+            <div class="card border-success">
+              <img src="../media/img/claridadbanco.jpg" class="card-img-top" alt="claridadbanco">
+              <div class="card-body letradisciplinas">
+                <h5 class="card-title">Basquet</h5>
+                <p class="card-text">Nuestra Disciplina principal donde contamos con mas de 150 chicos en ambas ramas deportivas (femenino y masculino), donde competimos en el nivel 1 del torneo masculino y nivel 2 del torneo femenino, contamos con dos primeras masculinas, las cuales disputan el torneo Federal argentino y el torneo metropolitano de primera division, por el lado del femenino, contamos con una primera que pelea en la copa de oro del nivel femenino, informate por horarios y aranceles en la secretaria del club, te esperamos!! </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-success">
+              <img src="../media/img/futbol.png" class="card-img-top fotofutbol" alt="futbolclaridad">
+              <div class="card-body letradisciplinas">
+                <h5 class="card-title">Futbol</h5>
+                <p class="card-text">Veni a jugar al mas grande de Ciudadela, contamos con mas de 150 chicos en diferentes categorias, un plantel superior de masculino y femenino, disputamos los torneos de la F.A.F.I (federacion argentina de futbol infantil), donde competimos en el nivel B, veni a entrenar con nuestros entrenadores con paso por las inferiores de grandes clubes del futbol argentino, horarios en cartelera en el hall del club, ponete la camiseta del mas grande de ciudadela y disfruta de este maravilloso deporte, inscribite para conocer a tus nuevos compañeros!!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-success">
+              <img src="../media/img/patinclaridadd.png" class="card-img-top" alt="patinclaridad">
+              <div class="card-body letradisciplinas">
+                <h5 class="card-title">Patin</h5>
+                <p class="card-text">disfruta de esta hermosa disciplina en donde te vas a encontrar con muchas cosas nuevas y un muchas sensaciones antes vistas, contamos con un equipo de profesionales los cuales conllevan los entrenamientos de una manera muy dinamica y divertida, torneos mensuales en donde podes explayar tus tecnicas aprendidas durante tus practicas, podes preguntar los horarios y precios en la secretaria del club para sumarte cuanto antes, veni a aprender sobre esta disciplina, te esperamos!!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-success">
+              <img src="../media/img/telaclaridad.jpg" class="card-img-top" alt="telaclaridad">
+              <div class="card-body letradisciplinas">
+                <h5 class="card-title">Tela</h5>
+                <p class="card-text">introducite en esta maravillosa disciplina que es la "tela artistica", veni a conocer nuestro espacio designado para realizar esta actividad, muestras anuales y convenciones mensuales te esperan para que te involucres en ellas, pregunta por los horarios, precios y edades que permitimos para realizar esta actividad en el hall del club, te esperamos!!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 border-success cardsdisciplinas--taewkondo">
+          <div class="row g-0">
+            <div class="col-lg-6 col-sm-8">
+              <img src="../media/img/taewkondoclaridad.png" class="img-fluid rounded-start" alt="taekwondoequipo">
+            </div>
+            <div class="col-lg-6 col-sm-4">
+              <div class="card-body letradisciplinas--taewkondo">
+                <h5 class="card-title">Taekwondo</h5>
+                <p class="card-text">Veni a conocer esta conocida arte marcial, donde disponemos de un equipo de profesionales que compiten en el alto nivel del Taekwondo, tenemos alrededor de 20 chicos de diferentes edades que compiten mensualmente en torneos organizados por la federacion argentina de taekwondo, consulta horarios y precios en la secretaria del club, estas invitado!!!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
 
     </div>
     <footer class="footer-inicio">
         <h3>+54 9 1150348785</h3>
-        <a class="footer-inicio" href="https://www.instagram.com/clubclaridad/"><img src="../media/img/instagram-logo.svg" alt="instagram"></a>
-        <a class="footer-inicio" href="#"><img src="../media/img/cerrarsesion.svg" alt="log out"></a>
-        <a class="footer-inicio" href="#"><img src="../media/img/ayuda.svg" alt="HELP"></a>
+        <a class="footer-inicio logosfooter" href="https://www.instagram.com/clubclaridad/"><img src="../media/img/instagram-logo.svg" alt="instagram"></a>
+        <a class="footer-inicio logosfooter" href="#"><img src="../media/img/cerrarsesion.svg" alt="log out"></a>
+        <a class="footer-inicio logosfooter" href="#"><img src="../media/img/ayuda.svg" alt="HELP"></a>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>

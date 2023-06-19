@@ -1,0 +1,51 @@
+header {
+    margin-top: 20px;
+    background-color: white;
+}
+.ldeco {
+    text-decoration: none;
+    font-family: calibri;
+    color: green;
+    list-style: none;
+}
+.tipolmio3 {
+    font-family: calibri;
+    list-style: none;
+}
+.nav-inicio-mio {
+    display: flex;
+    flex-wrap: wrap;
+    color: green;
+    list-style: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+@media screen and (max-width:425px) {
+    .nav-inicio-mio {
+        font-size: medium;
+    } 
+}
+ @media screen and (max-width:768px) {
+     .nav-inicio-mio {
+        display: none;
+    }
+    #contacto-navbar {
+       display: none;
+    }
+     .escudo-inicio {
+         margin-top: 50px;
+     }
+}
+.bg-dark-mio {
+    background-color: rgb(10, 139, 10);
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+}
+@media screen and (min-width:769px) {
+    .navbar-mobile {
+        display: none; 
+    }
+}

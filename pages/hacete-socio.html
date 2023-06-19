@@ -7,11 +7,11 @@
     <link rel="shortcut icon" href="../media/favicon/FAVICON.jfif" type="image/x-icon">
     <title>Claridad</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
-        <div class="container-fluid">
+        <div class="container-fluid" id="contacto-navbar">
             <div class="row">
                 <div class="col-lg-5 col-5">
                     <ul>
@@ -21,8 +21,8 @@
                         </li>
                         <li class="tipolmio3 ldeco">
                             <img src="../media/img/envelope.svg" alt="mail">
-                                <a class="tipolmio3 ldeco" href="mailto:info@clubsocialclaridad@gmail.com">
-                                    <strong>infoclubclaridad@gmail.com</strong>
+                                <a class="tipolmio3 ldeco" href="E-mail">
+                                    <strong>E-mail</strong>
                                 </a>  
                         </li>
                     </ul>
@@ -49,18 +49,95 @@
             </div>
         </div>
         <nav class="navbar bg-body-tertiary logo">
-            <div>
+            <div class="escudo-inicio">
               <a class="navbar-brand" href="#">
                 <img src="../media/img/escudoclaridad.png" alt="logoclaridad" width="90" height="90">
               </a>
             </div>
           </nav>
+          <div class="navbar-mobile">
+            <nav class="navbar navbar-dark bg-dark-mio fixed-top">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#"> Claridad</a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasDarkNavbar"
+                  aria-controls="offcanvasDarkNavbar"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="offcanvas offcanvas-end text-bg-dark"
+                  tabindex="-1"
+                  id="offcanvasDarkNavbar"
+                  aria-labelledby="offcanvasDarkNavbarLabel"
+                >
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                      Claridad
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close btn-close-white"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html"
+                          >Inicio</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"
+                          >Hacete Socio</a
+                        >
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a
+                          class="nav-link dropdown-toggle"
+                          href="#"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Más
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                          <li>
+                            <a class="dropdown-item" href="../pages/basquet.html"
+                              >Basquet</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="../pages/disciplinas.html"
+                              >Disciplinas</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="../pages/aranceles.html"
+                              >Aranceles</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
     </header>
-    <section class="FORMULARIO">
+    <section class="formulario">
         <div>
-        <H1 id="titulo-formulario">!Hacete Socio y Ayuda al Verde desde tu lugar!</H1>
+        <H1 class="titulo-formulario">!Hacete Socio y Ayuda al Verde desde tu lugar!</H1>
         <HR></HR>
-        <form class="row g-3">
+        <form class="row g-3 formulario">
             <div class="col-md-4">
                 <label for="validationDefault01" class="form-label">Nombre</label>
                 <input type="text" class="form-control" id="validationDefault01" value="Todos los Nombre" required>
@@ -116,18 +193,19 @@
             </div>
           </form>
              <HR></HR>
+      </div>
     </section>
-    <main class="FORMULARIO"><h1>!Encontranos!</h1></main>
+    <main class="formulario"><h1>!Encontranos!</h1></main>
     <div class="container-fluid">
         <div class="row">
-            <div class="card col-lg-6 container-map-mio" style="width: 39rem; height: 39rem;">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.457432434408!2d-58.54005668476929!3d-34.643148980449226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9ba596b4945%3A0xdec7d0d6ed4d9039!2sClub%20Social%20Claridad%20de%20Fomento%20y%20Cultura!5e0!3m2!1ses!2sar!4v1686001624929!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+            <div class="card col-lg-6 container-map-mio stylemiomaps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.457432434408!2d-58.54005668476929!3d-34.643148980449226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9ba596b4945%3A0xdec7d0d6ed4d9039!2sClub%20Social%20Claridad%20de%20Fomento%20y%20Cultura!5e0!3m2!1ses!2sar!4v1686001624929!5m2!1ses!2sar" width="auto" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
                 <div class="card-body">
                   <h5 class="card-title">!Veni a Visitarnos!</h5>
                   <a href="https://goo.gl/maps/P4pYZ3RoHzhUXHHw9" class="btn boton-form">!Vamos!</a>
                 </div>
             </div>
-            <div class="col-lg-6 container-map-miogit">
+            <div class="col-lg-6 container-map-mio">
                 <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
@@ -151,20 +229,20 @@
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Next</span>
                     </button>
-                  </div>
+                  </div> 
             </div>
 
         </div>
     </div> 
-    <hr class="FORMULARIO">  
+    <hr class="formulario">  
     
    
 
     <footer class="footer-inicio">
         <h3>+54 9 1150348785</h3>
-        <a class="footer-inicio" href="https://www.instagram.com/clubclaridad/"><img src="../media/img/instagram-logo.svg" alt="instagram"></a>
-        <a class="footer-inicio" href="#"><img src="../media/img/cerrarsesion.svg" alt="log out"></a>
-        <a class="footer-inicio" href="#"><img src="../media/img/ayuda.svg" alt="HELP"></a>
+        <a class="footer-inicio logosfooter" href="https://www.instagram.com/clubclaridad/"><img src="../media/img/instagram-logo.svg" alt="instagram"></a>
+        <a class="footer-inicio logosfooter" href="#"><img src="../media/img/cerrarsesion.svg" alt="log out"></a>
+        <a class="footer-inicio logosfooter" href="#"><img src="../media/img/ayuda.svg" alt="HELP"></a>
     </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>

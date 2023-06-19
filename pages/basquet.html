@@ -7,11 +7,11 @@
     <link rel="shortcut icon" href="../media/favicon/FAVICON.jfif" type="image/x-icon">
     <title>Claridad</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
-        <div class="container-fluid">
+        <div class="container-fluid" id="contacto-navbar">
             <div class="row">
                 <div class="col-lg-5 col-5">
                     <ul>
@@ -21,8 +21,8 @@
                         </li>
                         <li class="tipolmio3 ldeco">
                             <img src="../media/img/envelope.svg" alt="mail">
-                                <a class="tipolmio3 ldeco" href="mailto:info@clubsocialclaridad@gmail.com">
-                                    <strong>infoclubclaridad@gmail.com</strong>
+                                <a class="tipolmio3 ldeco" href="E-mail">
+                                    <strong>E-mail</strong>
                                 </a>  
                         </li>
                     </ul>
@@ -49,62 +49,144 @@
             </div>
         </div>
         <nav class="navbar bg-body-tertiary logo">
-            <div>
+            <div class="escudo-inicio">
               <a class="navbar-brand" href="#">
                 <img src="../media/img/escudoclaridad.png" alt="logoclaridad" width="90" height="90">
               </a>
             </div>
           </nav>
+          <div class="navbar-mobile">
+            <nav class="navbar navbar-dark bg-dark-mio fixed-top">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">Claridad</a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasDarkNavbar"
+                  aria-controls="offcanvasDarkNavbar"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="offcanvas offcanvas-end text-bg-dark"
+                  tabindex="-1"
+                  id="offcanvasDarkNavbar"
+                  aria-labelledby="offcanvasDarkNavbarLabel"
+                >
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                      Claridad
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close btn-close-white"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html"
+                          >Inicio</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/hacete-socio.html"
+                          >Hacete Socio</a
+                        >
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a
+                          class="nav-link dropdown-toggle"
+                          href="#"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Más
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Basquet</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="../pages/disciplinas.html"
+                              >Disciplinas</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="../pages/aranceles.html"
+                              >Aranceles</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
     </header>
-    <main id="titulo-basquet"><h1>¡Resumen del Finde de Semana a puro Basquet!</h1></main>
-<div class="cards-basquet">
-    <div class="card column-mio" style="width: 18rem;">
-        <img src="../media/img/u19.png" class="card-img-top" alt="u19equipo">
-        <div class="card-body">
-          <p class="card-text"><h2>Tira Masculina</h2>
-            <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolores atque placeat autem amet libero, odit quasi similique, illo veniam voluptatem nisi sint neque earum, possimus ipsam incidunt! Odit, dolores</strong></p></p>
+  <main id="titulo-basquet"><h1>¡Resumen del Finde de Semana a puro Basquet!</h1></main>
+    <div class="row row-cols-1 row-cols-md-2 g-4 cards-basquet">
+      <div class="col">
+        <div class="card border-success">
+          <img src="../media/img/u19.png" class="card-img-top" alt="u19equipo">
+          <div class="card-body">
+            <h5 class="card-title">Tira Masculina</h5>
+            <p class="card-text">Nuestra tira masculina se enfrento este finde semana (11/06) contra Institucion Sarmiento de visitante donde hubo muchos partidos emocionantes y diferentes emociones por parte de los chicos que buscan la clasificacion al top-16,victoria de los infantiles (96 a 60), ajustada derrota de los cadetes (80 a 82) y una gran victoria de los juveniles que se ponen a tiro en los primeros puestos del grupo B (76 a 70)</p>
+          </div>
         </div>
-    </div>
-    <div class="card column-mio" style="width: 18rem;">
-        <img src="../media/img/primerafemenina.png" class="card-img-top" alt="euqipofemenino">
-        <div class="card-body">
-          <p class="card-text"><h2>Tira Femenina</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio unde totam iste temporibus, expedita suscipit earum, nam officia ducimus in saepe voluptates aperiam hic repudiandae perferendis iusto nesciunt inventore quae.</p></p>
+      </div>
+      <div class="col">
+        <div class="card border-success">
+          <img src="../media/img/primerafemenina.png" class="card-img-top" alt="equipofemenino">
+          <div class="card-body">
+            <h5 class="card-title">Tira Femenina</h5>
+            <p class="card-text">La tira Femenina se enfrento de local contra harrods en una jornada corta donde solo se disputaron los partidos de cadetas y juveniles debido a la falta de jugadoras en el otro equipo, ambos partidos terminaron con victoria para claridad por la minima (79 a 80 y 45 a 46), nuestras chicas continuan peleando en el grupo A del nivel 2 por la posicion para la post-temporada, donde hay grandes expectativas para el campeonato</p>
+          </div>
         </div>
-    </div>
-    <div class="card column-mio" style="width: 18rem;">
-        <img src="../media/img/Claridad-Mosquitos.jpg" class="card-img-top" alt="claridadmosquitos">
-        <div class="card-body">
-          <p class="card-text"><h2>Mosquitos</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae itaque ut, voluptatum aliquam sapiente animi quia. Tempore iure accusantium suscipit odit facilis possimus odio natus voluptate, blanditiis sapiente tempora eos.</p></p>
+      </div>
+      <div class="col">
+        <div class="card border-success">
+          <img src="../media/img/Claridad-Mosquitos.jpg" class="card-img-top" alt="lospeques">
+          <div class="card-body">
+            <h5 class="card-title">Mosquitos</h5>
+            <p class="card-text">Se llevo a cabo en una gran jornada de domingo el encuentro numero 23 del año, donde fuimos localia y recibimos muchos clubes dentro de ellos estaban Ferro, Racing, Ramos LTC, Midland, entre otros.
+              La jornada concluyo con una comida entre todos y muchos juegos en la zona del multiespacio, gracias a todos por venir!!!
+            </p>
+          </div>
         </div>
-    </div>
-    <div class="card column-mio" style="width: 18rem;">
-        <img src="../media/img/claridadbanco.jpg" class="card-img-top" alt="federalequipo">
-        <div class="card-body">
-          <p class="card-text"><h2>Liga Federal</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae itaque ut, voluptatum aliquam sapiente animi quia. Tempore iure accusantium suscipit odit facilis possimus odio natus voluptate, blanditiis sapiente tempora eos.</p></p>
+      </div>
+      <div class="col">
+        <div class="card border-success">
+          <img src="../media/img/federalmedio.jpg" class="card-img-top" alt="federalequipo">
+          <div class="card-body">
+            <h5 class="card-title">Liga Federal</h5>
+            <p class="card-text">La primera gano un partido historico frente a Institucion Sarmiento en 4 suplementrarios (123 a 121), el equipo de nuestro entrenador Claudio Ricci necesitaba la victoria y salio desde el minuto 1 decidido a eso, un gran partido de todos los que les toco entrar y un merito aparte para Mariano Rabazano q hizo 42 puntos pero le toco abandonar la cancha por 5 fouls, seguimos en carrera por la clasificacion a playoff donde la proxima fecha nos jugamos todo versus All-Boys de local, te esperamos!! </p>
+          </div>
         </div>
+      </div>
     </div>
-</div>
+  
     
-    <div class="alert alert-success alerta-mio columna-mio" role="alert">
+    <div class="alert alert-success alerta-mio col-12" role="alert">
         <H2>Proximas Fechas:</H2> <br>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, ad vitae est quasi ut iste unde numquam dolores corrupti animi, libero nisi quibusdam illum adipisci repellendus tempore, tempora temporibus nam.</p>
     </div>
-        
-           
-        
-    
-
-
-    
-    <!-- footer pagina -->
+         
+        <!-- footer pagina -->
     <footer class="footer-inicio">
         <h3>+54 9 1150348785</h3>
-        <a class="footer-inicio" href="https://www.instagram.com/clubclaridad/"><img src="../media/img/instagram-logo.svg" alt="instagram"></a>
-        <a class="footer-inicio" href="#"><img src="../media/img/cerrarsesion.svg" alt="log out"></a>
-        <a class="footer-inicio" href="#"><img src="../media/img/ayuda.svg" alt="HELP"></a>
+        <a class="footer-inicio logosfooter" href="https://www.instagram.com/clubclaridad/"><img src="../media/img/instagram-logo.svg" alt="instagram"></a>
+        <a class="footer-inicio logosfooter" href="#"><img src="../media/img/cerrarsesion.svg" alt="log out"></a>
+        <a class="footer-inicio logosfooter" href="#"><img src="../media/img/ayuda.svg" alt="HELP"></a>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>

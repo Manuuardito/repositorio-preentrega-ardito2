@@ -1,0 +1,35 @@
+@mixin green-flex-center {
+    color: green;
+    display: flex;
+    justify-content: center;
+}
+
+
+.aranceles-titulo {
+   @include green-flex-center;
+}
+@mixin margin-boton-precios {
+    margin-bottom: 25px;
+    margin-left: 16px;
+    margin-top: 5px;
+}
+.boton-precios-aranceles {
+     @include margin-boton-precios;
+}
+@mixin margin-left-card {
+    margin-left: 20px;
+}
+@mixin margin-right-card {
+    margin-right: 20px;
+}
+.card-mio-aranceles {
+    @include margin-left-card;
+    @include margin-right-card
+}
+
+@media screen and (max-width: 768px) {
+    .size-precios {
+    font-size: small;
+     
+    }
+}

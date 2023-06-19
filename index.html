@@ -7,11 +7,15 @@
     <link rel="shortcut icon" href="../media/favicon/FAVICON.jfif" type="image/x-icon">
     <title>Claridad</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/main.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+    
 </head>
 <body>
     <header>
-        <div class="container-fluid">
+        <div class="container-fluid" id="contacto-navbar">
             <div class="row">
                 <div class="col-lg-5 col-5">
                     <ul>
@@ -49,15 +53,92 @@
             </div>
         </div>
         <nav class="navbar bg-body-tertiary logo">
-          <div>
+          <div class="escudo-inicio">
             <a class="navbar-brand" href="#">
               <img src="./media/img/escudoclaridad.png" alt="logoclaridad" width="90" height="90">
             </a>
           </div>
         </nav>
+        <div class="navbar-mobile">
+          <nav class="navbar navbar-dark bg-dark-mio fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"> Claridad</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar"
+                aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="offcanvas offcanvas-end text-bg-dark"
+                tabindex="-1"
+                id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel"
+              >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                    Claridad
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close btn-close-white"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Inicio</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./pages/hacete-socio.html"
+                        >Hacete Socio</a
+                      >
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Más
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li>
+                          <a class="dropdown-item" href="./pages/basquet.html"
+                            >Basquet</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./pages/disciplinas.html"
+                            >Disciplinas</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./pages/aranceles.html"
+                            >Aranceles</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
         
     </header>
-    <h1 class="noticias-inicio">¡Liga Federal!</h1>
+    <h1 class="noticias-inicio animate__animated animate__bounce">¡Liga Federal!</h1>
     <main class="caruselmio">
       <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
@@ -86,19 +167,19 @@
         </button>
       </div>
     </main>
-    <h1 class="noticias-inicio">!NOTICIAS!</h1>
+    <h1 class="noticias-inicio animate__animated animate__bounce">!NOTICIAS!</h1>
     <div class="text-center col-12 contenedor-texto-inicio">
         <div class= "wrap-inicio-noticia">
             <h1>¡CONTUNDENTE VICTORIA DEL EQUIPO FRENTE A INSTITUCION SARMIENTO EN CUADRUPLE SUPLEMENTARIO!</h1>
             <h3>Victoria 123-121 por la decima quinta fecha del Torneo Federal</h3>
-            <p><strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, accusantium impedit? Ipsa eligendi dolorem aperiam excepturi non cupiditate officiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit quasi, nobis hic deserunt ullam aliquam voluptatem ex fugit recusandae sint quaerat unde quisquam odio tempora quia dolore eveniet deleniti molestias.</strong></p>
+            <p><strong>Victoria historica para el plantel del Federal frente a Ins.Sarmiento de Local, en una noche historica, más detalles en la seccion de basquet!!</strong></p>
         </div>
     </div>
     <footer class="footer-inicio">
         <h3>+54 9 1150348785</h3>
-        <a class="footer-inicio" href="https://www.instagram.com/clubclaridad/"><img src="./media/img/instagram-logo.svg" alt="instagram"></a>
-        <a class="footer-inicio" href="#"><img src="./media/img/cerrarsesion.svg" alt="log out"></a>
-        <a class="footer-inicio" href="#"><img src="./media/img/ayuda.svg" alt="HELP"></a>
+        <a class="footer-inicio logosfooter" href="https://www.instagram.com/clubclaridad/"><img src="./media/img/instagram-logo.svg" alt="instagram"></a>
+        <a class="footer-inicio logosfooter" href="#"><img src="./media/img/cerrarsesion.svg" alt="log out"></a>
+        <a class="footer-inicio logosfooter" href="#"><img src="./media/img/ayuda.svg" alt="HELP"></a>
     </footer> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>

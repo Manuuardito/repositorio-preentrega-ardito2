@@ -1,0 +1,27 @@
+.formulario {
+    font-size: x-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: green;
+    margin: 20px;
+}
+@media screen and (max-width:769px) {
+    .formulario {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.titulo-formulario {
+    display: flex;
+    justify-content: center;
+}
+.container-map-mio {
+    margin: 10px;
+}
+.stylemiomaps {
+   width: 39rem;
+   height: 39rem; 
+}
+.boton-form {
+    color: white;
+    background-color: green;
+}

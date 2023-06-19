@@ -7,11 +7,11 @@
     <link rel="shortcut icon" href="../MEDIA/FAVICON/FAVICON.jfif" type="image/x-icon">
     <title>Claridad</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
-        <div class="container-fluid">
+        <div class="container-fluid" id="contacto-navbar">
             <div class="row">
                 <div class="col-lg-5 col-5">
                     <ul>
@@ -21,8 +21,8 @@
                         </li>
                         <li class="tipolmio3 ldeco">
                             <img src="../media/img/envelope.svg" alt="mail">
-                                <a class="tipolmio3 ldeco" href="mailto:info@clubsocialclaridad@gmail.com">
-                                    <strong>infoclubclaridad@gmail.com</strong>
+                                <a class="tipolmio3 ldeco" href="E-mail">
+                                    <strong>E-mail</strong>
                                 </a>  
                         </li>
                     </ul>
@@ -38,7 +38,7 @@
                             <li class="nav-item">
                              <a class="nav-link" href="../pages/disciplinas.html">DISCIPLINAS</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item"> 
                             <a class="nav-link active" href="#">ARANCELES</a>
                         </li>
                         <li class="nav-item">
@@ -49,32 +49,177 @@
             </div>
         </div>
         <nav class="navbar bg-body-tertiary logo">
-            <div>
+            <div class="escudo-inicio">
               <a class="navbar-brand" href="#">
                 <img src="../media/img/escudoclaridad.png" alt="logoclaridad" width="90" height="90">
               </a>
             </div>
           </nav>
+          <div class="navbar-mobile">
+            <nav class="navbar navbar-dark bg-dark-mio fixed-top">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#"> Claridad</a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasDarkNavbar"
+                  aria-controls="offcanvasDarkNavbar"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="offcanvas offcanvas-end text-bg-dark"
+                  tabindex="-1"
+                  id="offcanvasDarkNavbar"
+                  aria-labelledby="offcanvasDarkNavbarLabel"
+                >
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                      Claridad
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close btn-close-white"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html"
+                          >Inicio</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/hacete-socio.html"
+                          >Hacete Socio</a
+                        >
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a
+                          class="nav-link dropdown-toggle"
+                          href="#"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Más
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                          <li>
+                            <a class="dropdown-item" href="../pages/basquet.html"
+                              >Basquet</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="../pages/disciplinas.html"
+                              >Disciplinas</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Aranceles</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
     </header>
-        <div id="aranceles-fondo" class="aranceles">
-            <h1>Aranceles Institucionales</h1> <br><br><br>
-            <h3>Cuota Social</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p> 
-            <h3>Cuota Deportiva</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p> 
-            <h3>Inscripcion Basquet, Futbol y Patin</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
-            <h3>Inscripcion Tela, Taewkondo y Iniciacion Deportiva</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <h3>Inscripcion Futbol Inclusivo</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-
-        </div>    
+    <main class="aranceles-titulo">
+      <h1>Aranceles Deportivos y Cuota Social </h1>
+    </main>
+    <div class="row row-cols-1 row-cols-md-2 g-4 card-mio-aranceles">
+      <div class="col">
+        <div class="card border-success mb-3">
+          <img src="../media/img/carnetsocial.jpg" class="card-img-top" alt="carnetsocial">
+          <div class="card-body">
+            <h5 class="card-title">Cuota Social</h5>
+            <p class="card-text">Solicita tu carnet al momento de abonar la cuota social para entrar en la institucion, obteniendo los beneficios de poder acceder a cualquier sector del establecimiento en donde este permitido estar, ademas ayudas al club a seguir creciendo, !se renueva mensualmente!</p>
+          </div>
+          <div class="dropdown boton-precios-aranceles">
+            <a class="btn btn-success btn-sm dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Precios
+            </a>
+            <ul class="dropdown-menu size-precios">
+              <li><a class="dropdown-item" href="#">Infantiles (hasta 11 años): $1000</a></li>
+              <li><a class="dropdown-item" href="#">Cadetes (desde 11 años / hasta 18 años ): $2000</a></li>
+              <li><a class="dropdown-item" href="#">Mayores (18 años en adelante): $2800</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-success mb-3">
+          <img src="../media/img/natacionreynado.png" class="card-img-top" alt="reynadopileta">
+          <div class="card-body">
+            <h5 class="card-title">Reynado Pileta</h5>
+            <p class="card-text">Veni a disfrutar de nuestra pileta deportiva de la mano del Equipo Profesional de Reynado, en donde contas con muchas actividades y difirentes oportunidades de probar !algo nuevo! (cada actividad tiene un valor aparte del carnet para asociarse al equipo)</p>
+          </div>
+          <div class="dropdown boton-precios-aranceles">
+            <a class="btn btn-success btn-sm dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Precios
+            </a>
+            <ul class="dropdown-menu size-precios">
+              <li><a class="dropdown-item" href="#">Infantiles (hasta 11 años): $500</a></li>
+              <li><a class="dropdown-item" href="#">Cadetes (desde 11 años / hasta 18 años ): $1200</a></li>
+              <li><a class="dropdown-item" href="#">Mayores (18 años en adelante): $1500</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-success mb-3">
+          <img src="../media/img/arancelesbasquet.png" class="card-img-top" alt="basquetaranceles">
+          <div class="card-body">
+            <h5 class="card-title">Basquet</h5>
+            <p class="card-text">Sumate a nuestra principal Disciplina en el club, donde podes aprender de lo maravilloso de este deporte y compartir con amigos en la cancha, sumate a las diferentes categorias y participa del torneo de la Federacion de "Febamba", !estas invitado!</p>
+          </div>
+          <div class="dropdown boton-precios-aranceles">
+            <a class="btn btn-success btn-sm dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Precios
+            </a>
+            <ul class="dropdown-menu size-precios">
+              <li><a class="dropdown-item" href="#">PreMini (hasta 7 años) y Mini (7 años /10 años)</a></li>
+              <li><a class="dropdown-item" href="#">PreInfantiles (10 años /13 años): $1000</a></li>
+              <li><a class="dropdown-item" href="#">Infantiles y Cadetes (14 años/hasta 17 años): $1900</a></li>
+              <li><a class="dropdown-item" href="#">Juveniles y Primera (18 años en adelante): $2500</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-success mb-3">
+          <img src="../media/img/deportesaranceles.png" class="card-img-top" alt="deportescuotas">
+          <div class="card-body">
+            <h5 class="card-title">Nuestras demas Disciplinas</h5>
+            <p class="card-text">Nuestras disciplinas (excepto basquet) comparten un mismo arancel debido a la cantidad de chicos que tenemos, veni a probar el que mas te guste con un mes gratis sin abonar la Inscripcion, si te gusta podes inscribirte en tu respectiva categoria, !te esperamos!</p>
+          </div>
+          <div class="dropdown boton-precios-aranceles">
+            <a class="btn btn-success btn-sm dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Precios
+            </a>
+            <ul class="dropdown-menu size-precios">
+              <li><a class="dropdown-item" href="#">Infantiles (hasta 11 años): $1000</a></li>
+              <li><a class="dropdown-item" href="#">Cadetes (desde 11 años / hasta 18 años ): $1700</a></li>
+              <li><a class="dropdown-item" href="#">Mayores (18 años en adelante): $2200</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
         <footer class="footer-inicio">
             <h3>+54 9 1150348785</h3>
-            <a class="footer-inicio" href="https://www.instagram.com/clubclaridad/"><img src="../media/img/instagram-logo.svg" alt="instagram"></a>
-            <a class="footer-inicio" href="#"><img src="../media/img/cerrarsesion.svg" alt="log out"></a>
-            <a class="footer-inicio" href="#"><img src="../media/img/ayuda.svg" alt="HELP"></a>
+            <a class="footer-inicio logosfooter" href="https://www.instagram.com/clubclaridad/"><img src="../media/img/instagram-logo.svg" alt="instagram"></a>
+            <a class="footer-inicio logosfooter" href="#"><img src="../media/img/cerrarsesion.svg" alt="log out"></a>
+            <a class="footer-inicio logosfooter" href="#"><img src="../media/img/ayuda.svg" alt="HELP"></a>
         </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>   
 </body>

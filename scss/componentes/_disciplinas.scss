@@ -1,0 +1,27 @@
+.titulo-disciplinas {
+    @include green-flex-center
+}
+.cardsdisciplinas {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    
+}
+ .cardsdisciplinas--taewkondo {
+     @extend .cardsdisciplinas;
+     margin: 28px;
+}
+.letradisciplinas {
+    color: green;
+    font-size: large;
+}
+
+.letradisciplinas--taewkondo {
+    @extend .letradisciplinas;
+    font-size: 165%;
+}
+.fotofutbol {
+    height: auto;
+    width: auto;
+}
