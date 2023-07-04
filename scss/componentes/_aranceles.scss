@@ -2,12 +2,15 @@
     color: green;
     display: flex;
     justify-content: center;
-}
+    padding: 30px
 
+     
+}
 
 .aranceles-titulo {
    @include green-flex-center;
 }
+
 @mixin margin-boton-precios {
     margin-bottom: 25px;
     margin-left: 16px;

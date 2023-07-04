@@ -20,7 +20,7 @@
 .contenedor-texto-inicio {
   display: flex;
   align-items: center;
-  margin: 10px;
+  margin: auto;
   justify-content: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://www.argentina.basketball/themes/ee/site/default/asset/img/blog/20230427_195801.jpg);
   background-size: cover;
@@ -111,6 +111,11 @@
     opacity: 1;
   }
 }
+.escudo-mio {
+  width: 130px;
+  height: 130px;
+}
+
 header {
   margin-top: 20px;
   background-color: white;
@@ -351,6 +356,7 @@ header {
   color: green;
   display: flex;
   justify-content: center;
+  padding: 30px;
 }
 
 .boton-precios-aranceles {
@@ -527,6 +533,7 @@ header {
   color: green;
   display: flex;
   justify-content: center;
+  padding: 30px;
 }
 
 .cardsdisciplinas, .cardsdisciplinas--taewkondo {
